@@ -1,14 +1,17 @@
 
 * {
 box-sizing: border-box;
+  cursor: url(cursor.png),auto;
 }
 
 .bodycontent {
 	column-width: 100%;
+
 }
 
 body {margin: 0 auto;
 	font-family: helvetica, arial, sans-serif;
+  background-color: #3a3b3c;
 }
 
 h1{
@@ -16,8 +19,12 @@ text-align: center;
 font-weight: bold;
 color: white;
 font-size: 175%;
-padding: 60px;
+animation: glow 1s ease-in-out infinite alternate;
+padding: 140px;
+height: 300px;
 background-color: slategrey;
+background-image: url(https://64.media.tumblr.com/c05dabb8875f1893e68012aadca45ffd/tumblr_pvg4kgJc0I1sgm6puo1_1280.gifv);
+background-position-y: bottom;
 }
 
 .chicken {
@@ -57,6 +64,25 @@ margin-right: auto;
 padding: 20px 10px 10px 10px;
 }
 
+.cc {
+/*  background: = url(https://a-z-animals.com/media/2019/11/Chicken-2-hens.jpg), 50%;*/
+background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("chicken.png");
+  background-size: 11%;
+  background-repeat: repeat;
+}
+
+.bb {
+background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("beef.png");
+  background-size: 13%;
+  background-repeat: repeat;
+}
+
+.ss {
+background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("sushi.png");
+  background-size: 12%;
+  background-repeat: repeat;
+}
+
 /** large screens **/
 @media (min-width: 992px) {
   .col-lg-4 {
@@ -90,5 +116,15 @@ padding: 20px 10px 10px 10px;
   }
   .col-sm-12 {
     width: 100%;
+  }
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
